@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de l'en-tête */
+[data-role="header"] {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Style du contenu principal */
+[data-role="main"] {
+    padding: 20px;
+}
+
+/* Style des boutons */
+[data-role="button"], #saveContactButton {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 100%;
+}
+
+[data-role="button"]:hover, #saveContactButton:hover {
+    background-color: #0056b3;
+}
+
+/* Style de la liste de contacts */
+#contactList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#contactList li {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#contactList li:last-child {
+    border-bottom: none;
+}
+
+#contactList li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#contactList li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#contactList li .contact-info {
+    flex-grow: 1;
+}
+
+#contactList li h1 {
+    margin: 0;
+    font-size: 16px;
+    color: #007bff;
+}
+
+#contactList li p {
+    margin: 0;
+    color: #666;
+}
+
+/* Style du champ de recherche */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style du pied de page */
+[data-role="footer"] {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+} 
+
+.ui-popup {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.ui-content {
+    padding: 10px;
+}
+
+/* Style des champs de formulaire */
+form#addContactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+form#addContactForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form#addContactForm input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* For consistent padding and border */
+}
+
+#saveContactButton {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+#saveContactButton:hover {
+    background-color: #0056b3;
+}
+
+#contactList li {
+    display: flex;
+    align-items: center;
+}
+
+#contactList li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-info {
+    flex-grow: 1;
+}

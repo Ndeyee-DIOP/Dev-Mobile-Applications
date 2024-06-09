@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts Téléphone</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Ma liste de Contacts</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <input type="text" id="searchInput" placeholder="Rechercher un contact...">
+            <button id="searchButton">Rechercher</button>
+            <ul id="contactList" data-role="listview" data-inset="true">
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Adja Niang</h1>
+                            <p>77 838 65 94</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Gorgui Mbaye</h1>
+                            <p>70 443 67 56</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Aida Fall</h1>
+                            <p>77 510 64 38</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Mouhamed DIOP</h1>
+                            <p>76 535 55 20</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Boy Ndiaye</h1>
+                            <p>78 032 53 28</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Baldé Mew</h1>
+                            <p>77 266 11 01</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Khady soeur Alioune</h1>
+                            <p>77 755 22 37</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Fixe keur gua</h1>
+                            <p>33 818 88 90</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Mr Ifall</h1>
+                            <p>77 146 22 08</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Isaac</h1>
+                            <p>77 324 67 78</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Lo maçon</h1>
+                            <p>70 098 67 34</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg">
+                        <div class="contact-info">
+                            <h1>Sis</h1>
+                            <p>75 632 21 12</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <button id="addContactButton" data-role="button">Ajouter Contact</button>
+        </div>
+        <div data-role="footer">
+            <h1>DIC3 &copy; 2024</h1>
+        </div>
+    </div>
+
+    <!-- Modal for adding a new contact -->
+    <div id="addContactModal" data-role="popup" data-theme="a" class="ui-corner-all">
+        <div style="padding:10px 20px;">
+            <h3>Ajouter un Contact</h3>
+            <label for="firstName">Prénom:</label>
+            <input type="text" id="firstName" name="firstName">
+            <br>
+            <label for="lastName">Nom:</label>
+            <input type="text" id="lastName" name="lastName">
+            <br>
+            <label for="phoneNumber">Numéro de Téléphone:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber">
+            <button id="saveContactButton" data-role="button">Enregistrer</button>
+        </div>
+    </div>
+</body>
+</html>
